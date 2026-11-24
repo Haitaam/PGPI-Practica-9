@@ -1,2 +1,5 @@
 ﻿Configuracion inicial del modulo.
 Proyecto de simulacion PGPI.
+
+Contribucion de Haitam:
+Se establecen los parametros basicos de configuracion del proyecto.

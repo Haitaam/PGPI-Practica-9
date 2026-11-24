@@ -1,2 +1,5 @@
 ﻿Modulo principal de la Tarea 1.
 Este archivo representa el codigo inicial del proyecto.
+
+Primera contribucion de Haitam:
+Se define la estructura inicial del modulo y su funcionalidad.
