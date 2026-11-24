@@ -59,13 +59,27 @@ Archivos: `tarea2_config.txt`, `tarea2_modulo.txt`.
 
 ## Integracion con Jira
 
-Pendiente. No hay una instancia de Jira configurada ni autenticada en este
-entorno, por lo que todavia no existe una incidencia real ni una clave de
-incidencia. No se registrara ninguna clave inventada.
+- Proyecto Jira: https://haitamelahmar.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog
+- Incidencia real: SCRUM-1 - "Falta validacion de los parametros de configuracion del modulo"
+  https://haitamelahmar.atlassian.net/browse/SCRUM-1
+- La app "GitHub for Atlassian" esta instalada y conectada a la organizacion
+  Haitaam de GitHub, con acceso a este repositorio. Por ello, la rama y los
+  commits que contienen `SCRUM-1` aparecen en el panel Development de la
+  incidencia.
 
-Cuando este disponible:
-1. Conectar este repositorio de GitHub con el proyecto de Jira.
-2. Crear una incidencia de configuracion y anotar su clave real.
-3. Crear una rama `SCRUM-<clave>` desde `main`.
-4. Hacer una correccion real y un commit con la clave en el mensaje.
-5. Integrar la rama en `main`, hacer push y crear el tag `v1.1`.
+### Correccion de SCRUM-1
+
+- Rama: `SCRUM-1` (creada desde `main`).
+- Fix: se anade `validar_config.ps1`, que comprueba que `entorno`, `idioma` y
+  `modo_depuracion` tengan valores permitidos en los archivos de configuracion.
+- Uso:
+  `powershell -ExecutionPolicy Bypass -File ./validar_config.ps1 -ConfigPath tarea2_config.txt`
+- El script devuelve 0 si la configuracion es valida, 1 si hay valores
+  incorrectos o parametros ausentes y 2 si el archivo no existe.
+
+La rama `SCRUM-1` se fusiona en `main` y se etiqueta como `v1.1`.
+
+Nota: `v1.0` sigue pendiente porque las ramas personales de Sami
+(`Tarea1_Sami` y `Tarea2_Sami`) no tienen sus commits reales todavia. No se
+integraran `Tarea1` ni `Tarea2` en `main` como trabajo "completo" hasta que
+Sami haya contribuido.
