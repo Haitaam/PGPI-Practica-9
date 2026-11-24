@@ -1,2 +1,5 @@
 ﻿Modulo principal de la Tarea 2.
 Este archivo representa el segundo modulo del proyecto.
+
+Primera contribucion de Haitam:
+Se define la estructura funcional del segundo modulo.
