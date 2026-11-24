@@ -1,2 +1,9 @@
 ﻿Configuracion inicial de la Tarea 2.
 Proyecto de simulacion PGPI.
+
+Segunda contribucion de Haitam:
+Se anaden los parametros de configuracion del modulo:
+- entorno = desarrollo
+- idioma = es
+- modo_depuracion = activo
+Estos parametros permiten inicializar el modulo de la Tarea 2.
