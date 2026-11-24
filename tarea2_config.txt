@@ -1,0 +1,2 @@
+﻿Configuracion inicial de la Tarea 2.
+Proyecto de simulacion PGPI.

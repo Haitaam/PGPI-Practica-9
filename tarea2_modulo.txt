@@ -1,0 +1,2 @@
+﻿Modulo principal de la Tarea 2.
+Este archivo representa el segundo modulo del proyecto.
